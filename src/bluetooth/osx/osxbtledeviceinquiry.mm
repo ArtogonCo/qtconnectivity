@@ -211,7 +211,7 @@ using namespace QT_NAMESPACE;
         return;
     }
 
-    const CBCentralManagerState state = central.state;
+    const CBCentralManagerState state = (CBCentralManagerState)central.state;
     if (state == CBCentralManagerStatePoweredOn) {
         if (pendingStart) {
             pendingStart = false;

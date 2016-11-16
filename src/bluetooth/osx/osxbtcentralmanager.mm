@@ -1043,7 +1043,7 @@ using namespace QT_NAMESPACE;
 
     using namespace OSXBluetooth;
 
-    const CBCentralManagerState state = central.state;
+    const CBCentralManagerState state = (CBCentralManagerState)central.state;
 
     if (state == CBCentralManagerStateUnknown
         || state == CBCentralManagerStateResetting) {
